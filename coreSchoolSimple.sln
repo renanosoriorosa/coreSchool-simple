@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "coreSchool-simple", "coreSchool-simple\coreSchool-simple.csproj", "{110DC5BC-53BF-4BE3-A7FA-1150575B5DDF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "coreSchoolSimple", "coreSchool-simple\coreSchoolSimple.csproj", "{110DC5BC-53BF-4BE3-A7FA-1150575B5DDF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -9,6 +9,9 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
+using coreSchoolSimple.Models;
+using coreSchoolSimple.Services;
 
 namespace coreSchool_simple
 {
@@ -33,6 +36,10 @@ namespace coreSchool_simple
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            services.AddDbContext<coreSchoolSimpleContext>(options => options.UseMySql(Configuration.GetConnectionString("coreSchoolSimpleContext"), builder => builder.MigrationsAssembly("coreSchoolSimple")));
+            services.AddScoped<ProfessorService>();
+            services.AddScoped<AlunosService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
